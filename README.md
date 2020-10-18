@@ -1,4 +1,4 @@
-# Pneumonia Detector
+# PneumoDetector
 
 Pneumonia is an infection that inflames the alveoli in one or both lungs. The alveoli may fill with pus, causing cough with phlegm or pus, fever, chills, and difficulty breathing. In general, pneumonia is caused by a virus, a bacteria or fungi.
 
@@ -8,4 +8,7 @@ Chest X-Ray images can be useful in the diagnosis of Pneumonia. A doctor can dia
 
 The aim of this work is to automatize the detection of Pneumonia by using Deep Learning algorithms and only X-Ray images. Different techniques will be used in order to achieve the best possible results. If this task can be sucessfully achieved by a machine, then it will help doctors to save a lot of time that could be used in other actions.
 
-
+## About
+In this repository you could find two things:
+- Jupyter Notebook: A *Jupyter Notebook* containing the creation, training and evaluation of Deep Learning models.
+- Streamlit App: A simple *Streamlit* App where you can upload a picture (X-Ray Chest image) and predict if it suffers from pneumonia or not.
