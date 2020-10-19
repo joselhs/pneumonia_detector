@@ -14,7 +14,7 @@ import functions
 st.title("Pneumodetector APP")
 
 # Introduction text
-st.markdown(unsafe_allow_html=True, body="<p>Welcome to Pneumodetector APP. </p>"
+st.markdown(unsafe_allow_html=True, body="<p>Welcome to Pneumodetector APP.</p>"
                                          "<p>This is a basic app built with Streamlit."
                                          "With this app, you can upload a Chest X-Ray image and predict if the patient "
                                          "from that image suffers pneumonia or not.</p>"
