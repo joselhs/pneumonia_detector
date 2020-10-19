@@ -1,14 +1,7 @@
 import streamlit as st
-import numpy as np  # linear algebra
-import pandas as pd  # data processing, CSV file I/O (e.g. pd.read_csv)
-import os
-import matplotlib.pyplot as plt  # plots
-
-from PIL import Image
-# from keras.preprocessing.image import ImageDataGenerator
-from keras import layers, models, optimizers  # modeling
-
+import numpy as np
 import functions
+from PIL import Image
 
 # App Title
 st.title("Pneumodetector APP")
@@ -45,7 +38,7 @@ if img is not None:
     model = functions.load_model()
 
     # Predicting result
-    prediction = functions.predict(model, p_img)
+    prob, prediction = functions.predict(model, p_img)
 
     loading_msg.text('')
 
@@ -53,4 +46,6 @@ if img is not None:
         st.markdown(unsafe_allow_html=True, body="<span style='color:red; font-size: 50px'><strong><h4>Pneumonia! :slightly_frowning_face:</h4></strong></span>")
     else:
         st.markdown(unsafe_allow_html=True, body="<span style='color:green; font-size: 50px'><strong><h3>Healthy! :smile: </h3></strong></span>")
+
+    st.text(f"*Probability of pneumonia is {round(prob[0][0] * 100, 2)}%")
 

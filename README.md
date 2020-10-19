@@ -12,3 +12,5 @@ The aim of this work is to automatize the detection of Pneumonia by using Deep L
 In this repository you can find two things:
 - **Jupyter Notebook**: A *Jupyter Notebook* containing the creation, training and evaluation of Deep Learning models.
 - **Streamlit App**: A simple *Streamlit* App where you can upload a picture (X-Ray Chest image) and predict if it suffers from pneumonia or not.
+
+![](apprecord.gif)
